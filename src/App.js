@@ -200,7 +200,7 @@ class App extends Component {
                 })}
               onClick={this.onHandleClearCompleted}>Clear completed</p>
           </div>
-          <p></p>
+          <p>Double-click to edit a todo</p>
         </footer>
       </div>
     );

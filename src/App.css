@@ -124,5 +124,6 @@
 .footer .filter + p {
   color: #bfbfbf;
   margin-top: 3em;
+  visibility: hidden;
 }
 
