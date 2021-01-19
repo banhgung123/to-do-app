@@ -1,8 +1,13 @@
 .App {
-  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +40,89 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.header h1 {
+  text-transform: uppercase;
+  color: rgb(179, 131, 226);
+  font-size: 10rem;
+  text-align: center;
+  opacity: 0.4;
+  margin-bottom: 0;
 }
+
+.header div {
+  position: relative;
+}
+
+.header div img {
+  position: absolute;
+  top: 1.5em;
+  left: 1em;
+}
+
+.header .new-todo {
+  padding: 0.7em 2.5em;
+  border: 1px solid #dedede;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  font-size: 1.5em;
+  box-sizing: border-box;
+}
+
+.header .new-todo:focus {
+  outline: none;
+}
+
+.header .new-todo::placeholder {
+  font-style: italic;
+  opacity: 0.25;
+}
+
+.todo-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer {
+  font-size: 16px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.not-select-all {
+  opacity: 0.25;
+}
+
+.App .footer .filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ededed;
+  padding: 0 1em;
+  width: 100%;
+}
+
+.App .footer .filter button {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+}
+
+.App .footer .filter p:last-child:hover {
+  text-decoration: underline;
+}
+
+.footer .filter + p {
+  color: #bfbfbf;
+  margin-top: 3em;
+}
+
